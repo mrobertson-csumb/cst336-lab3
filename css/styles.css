@@ -1,0 +1,59 @@
+form {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 2em;
+}
+
+.form-section {
+    display: table;
+    float: left;
+    margin-left: 2vw;
+    border-spacing: .25em;
+    border-collapse: separate;
+    border: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+.form-section .form-item {
+    display: table-row;
+}
+
+.form-item > * {
+    display: table-cell;
+    margin: .5em;
+}
+
+.form-item .form-msg {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: medium;
+    padding: 0 0 0 1em;
+}
+
+.form-item input[type=radio] {
+    margin-left: .5em;
+}
+
+.form-span {
+    margin-bottom: .5em;
+}
+
+legend, h1, h2 {
+    font-size: xx-large;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bolder;
+}
+
+.btn-primary {
+    font-size: large;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bolder;
+}
+
+main {
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+body * {
+    color: #286190;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
+    <title>Sign Up Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<main>
+    <form id="signup" method="post" action="welcome.html">
+        <fieldset class="form-section">
+            <legend>User Details</legend>
+            <div class="form-item">
+                <label for="first_name">First Name:</label>
+                <input id="first_name" type="text" name="fName" class="form-control"/>
+            </div>
+            <div class="form-item">
+                <label for="last_name">Surname:</label>
+                <input id="last_name" type="text" name="lName" class="form-control"/>
+            </div>
+            <div class="form-item">
+                <label for="gender">Gender:</label>
+                <div id="gender">
+                    <input id="male" type="radio" name="gender" value="m"/>
+                    <label for="male">Male</label><br/>
+                    <input id="female" type="radio" name="gender" value="f"/>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form-section">
+            <legend>Geographic Info</legend>
+            <div class="form-item">
+                <label for="zip">Zip Code:</label>
+                <input id="zip" type="text" name="zip" class="form-control"/>
+                <div id="zip_msg" class="form-msg"></div>
+            </div>
+            <div class="form-item">
+                <label for="city">City:</label>
+                <input id="city" type="text" class="form-control" disabled/>
+            </div>
+            <div class="form-item">
+                <label for="lat">Latitude:</label>
+                <input id="lat" type="text" class="form-control" disabled/>
+            </div>
+            <div class="form-item">
+                <label for="lng">Longitude:</label>
+                <input id="lng" type="text" class="form-control" disabled/>
+            </div>
+            <div class="form-item">
+                <label for="state">State:</label>
+                <select id="state" name="state" class="form-control  form-control-sm"></select>
+            </div>
+            <div class="form-item">
+                <label for="county">County:</label>
+                <select id="county" name="country" class="form-control form-control-lg">
+                    <option value="">- Select One -</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset class="form-section">
+            <legend>Login Info</legend>
+            <div class="form-item">
+                <label for="username">Desired Username:</label>
+                <input id="username" type="text" name="username" class="form-control"/>
+                <div id="un_msg" class="form-msg"></div>
+            </div>
+            <div class="form-item">
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" class="form-control"/>
+                <div id="pw_msg" class="form-msg"></div>
+
+            </div>
+            <div class="form-item">
+                <label for="repeat" class="col-form-label">Password Again:</label>
+                <input id="repeat" type="password" name="repeat" class="form-control"/>
+                <div id="rpt_msg" class="form-msg"></div>
+            </div>
+            <div class="form-span text-center">
+                <button class="btn btn-primary">Sign Up!</button>
+            </div>
+        </fieldset>
+    </form>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
