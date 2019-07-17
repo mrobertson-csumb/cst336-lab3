@@ -33,6 +33,13 @@ form {
     margin-left: .5em;
 }
 
+.form-item span {
+    font-family: 'Fira Code', monospace;
+    font-size: inherit;
+    font-weight: bolder;
+
+}
+
 .form-span {
     margin-bottom: .5em;
 }
